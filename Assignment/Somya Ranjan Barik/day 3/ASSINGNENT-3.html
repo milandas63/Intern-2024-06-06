@@ -1,0 +1,65 @@
+<!--
+ ASSIGNMENT-3
+Create two columns of windows and display the list of countries in one window.
+On clicking on the country name, the corresponding window will display the 
+capital of the country, population, area in km, etc. (show the google map of that
+country).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info</title>
+    <script>
+        function showCountryInfo(country) {
+            const countryInfo = {
+                "USA": {
+                    capital: "Washington, D.C.",
+                    population: "331 million",
+                    area: "9,833,520 km²",
+                    mapSrc: "https://maps.google.com/maps?q=USA&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                },
+                "Canada": {
+                    capital: "Ottawa",
+                    population: "38 million",
+                    area: "9,984,670 km²",
+                    mapSrc: "https://maps.google.com/maps?q=Canada&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                },
+                "India": {
+                    capital: "New Delhi",
+                    population: "1.366 billion",
+                    area: "3,287,263 km²",
+                    mapSrc: "https://maps.google.com/maps?q=India&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                }
+            };
+            const info = countryInfo[country];
+            if (info) {
+                document.getElementById('country-info').style.display = 'block';
+                document.getElementById('capital').innerText = "Capital: " + info.capital;
+                document.getElementById('population').innerText = "Population: " + info.population;
+                document.getElementById('area').innerText = "Area: " + info.area;
+                document.getElementById('map').src = info.mapSrc;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="column">
+            <h2>Countries</h2>
+            <ul class="country-list">
+                <li onclick="showCountryInfo('USA')" style="color: rgb(128, 24, 193);cursor: pointer;">USA</li>
+                <li onclick="showCountryInfo('Canada')" style="color: rgb(128, 42, 161);cursor: pointer;">Canada</li>
+                <li onclick="showCountryInfo('India')" style="color: rgb(81, 8, 164);cursor: pointer;">India</li>
+            </ul>
+        </div>
+    </div>
+    <div class="column" id="country-info">
+        <h2>Country Information</h2>
+        <p id="capital" style="color:rgb(145, 189, 34);"></p>
+        <p id="population" style="color:rgb(29, 169, 174)"></p>
+        <p id="area" style="color:rgb(187, 35, 201)"></p>
+        <iframe id="map" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
