@@ -1,0 +1,104 @@
+<!--
+    +----+--------------+----------+---------------------------------------+---------+
+        |    |              |          |                  POPULATION           |         |
+        |    |              |          |-------------------+-------------------+         |
+        |    |              |          |       URBAN       |      RURAL        |         |
+        |    |              |          |---------+---------+---------+---------+         |
+        |    |              |          |   GOVT  |   PVT   |   GOVT  |   PVT   |         |
+        |    |              |          |----+----+----+----+----+----+----+----+         |
+        | SL | DISTRICT     | STATE    |  M |  F |  M |  F |  M |  F |  M |  F |  TOTAL  |
+        +----+--------------+----------+----+----+----+----+----+----+----+----+---------+
+          1   BALASORE       ODISHA      245  211  245  211  245  211  245  211      1001
+          2   CUTTACK        ODISHA      245  211  245  211  245  211  245  211      1001
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>ASSIGNMENT-2</h2>
+    <table>
+        <tr>
+            <th rowspan="2">SL</th>
+            <th rowspan="2">DISTRICT</th>
+            <th rowspan="2">STATE</th>
+            <th colspan="8">POPULATION</th>
+            <th rowspan="2">TOTAL</th>
+        </tr>
+        <tr>
+            <th colspan="2">URBAN</th>
+            <th colspan="2">RURAL</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th colspan="2">GOVT</th>
+            <th colspan="2">PVT</th>
+            <th colspan="2">GOVT</th>
+            <th colspan="2">PVT</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>M</th>
+            <th>F</th>
+            <th>M</th>
+            <th>F</th>
+            <th>M</th>
+            <th>F</th>
+            <th>M</th>
+            <th>F</th>
+        </tr>
+        <!-- Sample rows for illustration -->
+        <tr>
+            <td>1</td>
+            <td>BALASORE</td>
+            <td>ODISHA</td>
+            <td>245</td>
+            <td>211</td>
+            <td>245</td>
+            <td>211</td>
+            <td>245</td>
+            <td>211</td>
+            <td>245</td>
+            <td>211</td>
+            <td>1001</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CUTTACK</td>
+            <td>ODISHA</td>
+            <td>245</td>
+            <td>211</td>
+            <td>245</td>
+            <td>211</td>
+            <td>245</td>
+            <td>211</td>
+            <td>245</td>
+            <td>211</td>
+            <td>1001</td>
+        </tr>
+    </table>
+</body>
+</html>
