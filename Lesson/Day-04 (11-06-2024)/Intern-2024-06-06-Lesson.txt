@@ -1,0 +1,221 @@
+Start Date: 06-06-2024
+Time Session-1: 10:30 am to 12:30 pm (Class Room Mentoring)
+Time Session-2: 01:30 pm to 03:30 pm (Practical Session)
+Total Strength: 46 + 3
+Repo URL: https://github.com/milandas63/Intern-2024-06-06/
+
+NAME                                MOBILE NO.  EMAIL-ID                            GITHUB-ID
+Maiyang Ghiselaine		            7749091578	maiyangghiselaine@gmail.com         Maiyang2000
+Parsuram Panda		                6372993571	pparsuram420@gmail.com		        parsurampanda
+Rajib Raj Patnaik                   6370995667  patnaikrajib05@gmail.com            rajib0532
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Priyanshu Sekhar Jena               8658009062  rajashree.bls@gmail.com             Priyanshu008x
+Mir Abusalam                        8984038015  mirabusalam72@gmail.com             mirabusalam
+Md Sidik                            6371485412  sidikmd42@gmail.com                 sidik11         ***
+Sethi Rohan Kailesh                 9022264432  rohansethi251@gmail.com             Alphars18
+Nandan Kumar                        9234366410  raznandan240@gmail.com              nandan@240
+Ratikanta Mohanthy                  9556563490  ratikantamohanty924@gmail.com       Ratikanta5
+Aswini Kumar Raut                   8093514104  aswiniraut.tech@gmail.com           Aswini-kumar-raut
+Bibhu Prasad Baliarsingh            8018504875  baliarsinghb049@gmail.com           BibhuPrasadBaliarsingh
+Somya Ranjan Barik                  8456091003  somyaranjanbarik1206@gmail.com      SomyaBarik
+Laxmikanta Mohanta                  7608070691  laxmikanta.scm@gmail.com            laxmikanta023
+Ajit Kumar Sahoo                    9668220935  ajitsahoo9638705@gmail.com          ajit652
+Soumendra Madhusudan Priyadarshi    9692753031  smpriyadarshibarik@gmail.com        Happy67248
+Roshan Narayan Naik                 9937460553  brroshan04@gmail.com                RoshanNaik765
+Manas Ranjan Malla                  9861609109  manasbalu5@gmail.com                manasranjan776
+Soumyajit Samal                     8260658966  somyajitsamal3@gmail.com            soumyajitsamal001
+Sourav Kumar Pandab                 9040573208  souravkumarpandab1437@gmail.com     SouravKumarPandab
+Jyoti Ranjan Jena                   9337442818  jyotiranjanjena535@gmail.com        jyotiranjan950
+Ashutosh Dash                       9114137543  dashashutosh92@gmail.com            Ashutosh353
+Anupam Nayak                        7077548458  anupamnayak358@gmail.com            Anupam829
+Deba Prakash Swain                  9078644350  debaprakashswain000@gmail.com       PRAKASH-14A
+Soumya Prakash Behera               9776625011  soumyaprakashbehera3114@gmail.com   SoumyaPrakashBehera
+Prabina Kumar Das                   8093583966  prabindas4423@gmail.com             Prabina-Kumar-Das
+Barun samarath                      6371057905  varunsamarath@gmail.com             Varunsamrath
+Susil Kumar Nayak                   8984339007  nayaksushil298@gmail.com            Susil-commits
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Sumit Sourav Dash	                9937469053	ds6972943@gmail.com	                SUMIT-77985
+Ritesh Kumar Rout	                8260013234	riteshroutrishi@gmail.com	        Ritesh-Kumar-Rout
+Harichandan Keshi	                9348753795	harikeshi894@gmail.com	            Harichandankeshi
+Raj Aditya Mondal	                9692459896	raadmo682@gmail.com	                Raj-Aditya-Mondal
+Subhrajit Das	                    8984035366	subhrajitdas0.698@gmail.com	        subhrajitdas69
+Priyanshu Nayak	                    9692725590	pn9261556@gmail.com	                priyanshu125125
+Subham Sahoo	                    9827883738	subhamsahoo081@gmail.com	        subham0810
+Arup Mohanty	                    9040544330	arupmohanty529@gmail.com	        arup5290
+Ratiranjan Pati	                    7847981276	krishna18125@gmail.com	            Rati1273
+Babul Parida	                    6372745808	babulparida625@gmail.com	        Babul480
+Maheswar Malik	                    8984081985	malikmaheswar152@gmail.com	        mahesh6845
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
++----------------------+
+| Thursday, 06-06-2024 |    Day-01
++----------------------+
+    =   Induction by Adit Jena
+        >   21st Century Skills
+
+    =   Introduction to Programming Languages
+        >   Features:
+            ~   Executed by sequence of line number
+            ~   Jump from one line to another specified line
+            ~   Loops/Iterates across on or more lines
+            ~   Condition checking
+            ~   Evaluate equation
+
+    =   Introduction to HTML
+        >   Elements
+        >   Attributes
+            ~   Standard Attributes
+            ~   Common Attributes
+            ~   Event Attributes
+
+    =   Internet Browsers
+        >   Netscape Navigator
+        >   Google Chrome
+
+
++--------------------+
+| Friday, 07-06-2024 |  Day-02
++--------------------+
+    =   What is a Computer Programming Language?
+        They are a set of instructions to the computer in form of notations.
+        This instruction set has to be converted into machine language inorder
+        to be executed by the computer.
+
+    =   How is the conversion from programming language to machine language done?
+        The conversion is done using a tool that is called the compiler.
+
+    =   Types to Programming Languages
+        >   Passive languages
+            Is a presentation language. It doesn't follow the rules or features of
+            a general computer programming language. World's highest used language
+            is a passive language. Example of passive languages are HTML, SGML, etc.
+
+        >   Active languages
+            Active languages are more popular. All critical problems are solved in
+            the computer using active languages. It resides in the machine in which
+            it is executed. Example of active languages are, BASIC, COBOL, PASCAL,
+            ForTran, C, C++, Java,
+
+        >   Dynamic languages
+            Programs that run on request in the server machine using the server
+            resources. They only send the result of the program to the requesting
+            machine. Examples of these languages are PhP, JSP, ASP, Ruby, etc.
+
+    =   HTML is created with HTTP
+        The principal element of HTML is <HTML>...</HTML>.
+
+    =   Merging cells
+        COLSPAN and ROWSPAN
+        3 ROWS & 11 COLS
+        +-------+---------------------------+------------+-------------------------------------------------+
+        |       |                           |            |                      AGE GROUP                  |
+        |       |                           |            +-----------+------------+------------+-----------+
+        |       |                           |            | >5 & <=10 | >10 & <=15 | >15 & <=20 |    >20    |
+        |       |                           |            +-----+-----+------+-----+------+-----+-----+-----+
+        |  SLNO |  CANDIDATE NAME           |     DOB    |  M  |  F  |   M  |  F  |   M  |  F  |  M  |  F  |
+        +-------+---------------------------+------------+-----+-----+------+-----+------+-----+-----+-----+
+            1    MILAN DAS                    25-11-1963                                          1
+
+    =   ASSIGNMENT-1:
+        +-------+-------------------------------+-----------------------------------------------------------------------------------------------------------+
+        |       |                               |                                           POPULATION                                                      |
+        |       |                               |-----------------------------------------------------+-----------------------------------------------------|
+        |       |                               |                           URBAN                     |                           RURAL                     |
+        |       |                               |--------------------------+--------------------------+--------------------------+--------------------------|
+        |       |                               |           MALE           |           FEMALE         |          MALE            |           FEMALE         |
+        |       |                               |-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----|
+        |  SLNO | NAME OF THE DISTRICT          | <5  | 6-15 | 16-25 | >25 | <5  | 6-15 | 16-25 | >25 | <5  | 6-15 | 16-25 | >25 | <5  | 6-15 | 16-25 | >25 |
+        |-------+-------------------------------+-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----+-----+------+-------+-----|
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+        |       |                               |     |      |       |     |     |      |       |     |     |      |       |     |     |      |       |     |
+
+    =   ASSIGNMENT-2:
+        Two or more rows may be merged. Similarly, two or more columns may also be merged.
+        +----+--------------+----------+---------------------------------------+---------+
+        |    |              |          |                  POPULATION           |         |
+        |    |              |          |-------------------+-------------------+         |
+        |    |              |          |       URBAN       |      RURAL        |         |
+        |    |              |          |---------+---------+---------+---------+         |
+        |    |              |          |   GOVT  |   PVT   |   GOVT  |   PVT   |         |
+        |    |              |          |----+----+----+----+----+----+----+----+         |
+        | SL | DISTRICT     | STATE    |  M |  F |  M |  F |  M |  F |  M |  F |  TOTAL  |
+        +----+--------------+----------+----+----+----+----+----+----+----+----+---------+
+          1   BALASORE       ODISHA      245  211  245  211  245  211  245  211      1001
+          2   CUTTACK        ODISHA      245  211  245  211  245  211  245  211      1001
+
+    =   ASSIGNMENT-3:
+        +----------------------------------+
+        |                                  |
+        +----------------------------------+
+        |  CE  |  AC  |  M   |  M+  |  ON  |
+        |------+------+------+------+------|
+        |  SQR |  LOG |  AVG |  %   |  *   |
+        |------+------+------+------+------|
+        |   7  |   8  |   9  |  ++  |  -   |
+        |------+------+------+------+------|
+        |   4  |   5  |   6  |  --  |      |
+        |------+------+------+------|  +   |
+        |   1  |   2  |   3  |  **  |      |
+        |------+-------------+-------------|
+        |   .  |      0      |      =      |
+        +------+-------------+-------------+
+
+
++--------------------+
+| Monday, 10-06-2024 |  Day-03
++--------------------+
+    =   1)  a           Anchor: Creates link to another location
+        2)  img         Image: Displays an image (jpg, png, ...)
+        3)  iframe      Window: Display's a window showing another html page
+        4)  frame       
+        5)  frameset    
+        6)  ol          Ordered List: Displays the sequence number (1, a, A & i)
+        7)  ul          Unordered List: Displays a bullet (disc, square, circle)
+        8)  p           Paragraph
+        9)  br          Break row
+        10) hr          Horizontal row
+
+    =   ASSIGNMENT-1
+        Complete the Project Report for Nilachal Ispat Nigam Ltd
+
+    =   ASSIGNMENT-2
+        Complete the webpage of the Government Politial Parties and Leaders
+
+    =   ASSIGNMENT-3
+        Create two columns of windows and display the list of countries in one window.
+        On clicking on the country name, the corresponding window will display the 
+        capital of the country, population, area in km, etc. (show the google map of that
+        country).
+
++---------------------+
+| Tuesday, 11-06-2024 |  Day-04
++---------------------+
+    =   1)  form
+        2)  input
+        3)  map
+        4)  area
+
+    =   Assignment-1
+        Create a form in HTML to display and receive the following fields:
+        1)  Roll Number
+        2)  Name of the Candidate
+        3)  Gender (Male, Female & Other)
+        4)  Date of Birth
+        5)  Name of the home town
+        6)  Aadhaar Card Number
+        7)  Highest Qualification
+        8)  Owns Two-wheeler / Three-wheeler / Four-wheeler
+        9)  Hobby
+       10)  Innoculation
+
+    =   Assignment-2
+        Create links to the figures in the figures.jpg file. 
+
+    =   Solve the question paper "Test-IIG-HTML-001 (11-06-2024).docx" uploaded in
+        GitHub.com/milandas63/intern

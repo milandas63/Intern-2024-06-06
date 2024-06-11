@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1 align="center">Registration</h1>
+        <hr>
+        <br>
+        <form action="">
+            1. Candidate's Name:
+            <input type="text" name="name"><br>
+            2. Father's Name:
+            <input type="text"><br><br><br>
+            <input type="submit" value=" Save ">
+        </form>
+        <br><hr><br>
+        <form action="welcome.html" method="post">
+            <table>
+                <tr>
+                    <td>1.</td>
+                    <td>Candidate's Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Father's Name:</td>
+                    <td><input type="text" father="father"></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="M">Male
+                        <input type="radio" name="gender" value="F">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td valign="top">5.</td>
+                    <td valign="top">Examination Passed:</td>
+                    <td>
+                        <input type="checkbox" name="hsc">HSC<br>
+                        <input type="checkbox" name="inter">Intermediate<br>
+                        <input type="checkbox" name="grad">Graduation<br>
+                        <input type="checkbox" name="mast">Masters <br>
+                        <input type="checkbox" name="doctor">Doctorate <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Location: </td>
+                    <td>
+                        <select name="location" id="">
+                            <option value="">Select</option>
+                            <option value="ANG">Angul</option>
+                            <option value="BLS">Balasore</option>
+                            <option value="CTC">Cuttack</option>
+                            <option value="BBS">Bhubaneswar</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="hidden" name="character" value="very good">
+            <br><br><br>
+            <input type="submit" value=" Save ">
+            <input type="reset"  value=" Clear ">
+        </form>
+    </body>
+</html>
