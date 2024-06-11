@@ -1,1 +1,109 @@
 
+html
+    head
+        titleassingement-1title
+    head
+    body
+        h1general statisticsh1
+        hr
+        table border=1
+            thead
+                tr
+                    th rowspan=4 valign=bottom SLNOth
+                    th rowspan=4 valign=bottomNAME OF THE DISTRICT th
+                    th colspan=16POPULATIONth
+                tr
+                tr
+                    th colspan=8URBANth
+                    th colspan=8RURALth
+                tr
+                tr
+                    th colspan=4MALEth
+                    th colspan=4FEMALEth 
+                    th colspan=4MALEth
+                    th colspan=4FEMALEth
+                tr
+                tr
+                    th&lt;5th
+                    th6-15th 
+                    th16-25th
+                    th&gt;25th
+                    th&lt;5th
+                    th6-15th 
+                    th16-25th
+                    th&gt;25th
+                    th&lt;5th
+                    th6-15th 
+                    th16-25th
+                    th&gt;25th
+                    th&lt;5th
+                    th6-15th 
+                    th16-25th
+                    th&gt;25th
+                tr
+            thead
+            tbody
+                tr
+                    td&nbsp;td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                tr
+                tr
+                    td&nbsp;td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                tr
+                tr
+                    td&nbsp;td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                    td  td
+                tr
+            tbody
+        table
+    body
+html
