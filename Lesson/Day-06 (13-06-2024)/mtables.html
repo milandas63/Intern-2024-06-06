@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Multiplication Tables</title>
+        <script>
+            function tables() {
+                var from = document.getElementById("from").value;
+                var to = document.getElementById("till").value;
+                var count = 0;
+                document.writeln("<table border='1'>");
+                document.writeln("<tr>");
+                for(var i=from; i<=to; i++) {
+                    document.writeln("<td>");
+                    document.writeln("<table>");
+                    for(var j=1; j<=10; j++) {
+                        document.writeln("<tr>");
+                            document.writeln("<td align='right'>"+i+"</td>");
+                            document.writeln("<td align='center'>x</td>");
+                            document.writeln("<td align='right'>"+j+"</td>");
+                            document.writeln("<td align='center'>=</td>");
+                            document.writeln("<td align='right'>"+(i*j)+"</td>");
+                            document.writeln("</tr>");
+                    }
+                    document.writeln("</table>");
+                    document.writeln("</td>");
+                    count++;
+                    if(count>=10) {
+                        count = 0;
+                        document.writeln("</tr>");
+                        document.writeln("<tr>");
+                    }
+                }
+                document.writeln("</tr>");
+                document.writeln("</table>");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Multiplication Tables</h1>
+        <hr>
+        <table>
+            <tr>
+                <td>From which table: </td>
+                <td><input type="text" id="from" name="from"></td>
+            </tr>
+            <tr>
+                <td>Till which table: </td>
+                <td><input type="text" id="till" name="till"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="button" onclick="tables();" value=" Run ">
+        <br><br>
+    </body>
+</html>
