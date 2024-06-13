@@ -320,3 +320,19 @@ Chinmaya Mohanta                    7735265751  chinmayachinuyoyo@gmail.com     
             and has appeared in all Netscape and Microsoft browsers since 1996.
 
 
+    =   Document document = new Document();
+        document.getElementById("from");
+
+    =   Assignment-1
+        >   Complete the program datavalidation.html. Add more fields and
+            validate the fields on clicking the Save button.
+
+    =   Assignment-2
+        >   Write a program to take from number and to number from the user.
+            Print all PRIME numbers between the two number.
+
+    =   Assignment-3
+        >   Replace all data in the calculator program to BUTTONs and provide event
+            handling to the buttons.
+
+
