@@ -1,0 +1,111 @@
+<!--
+ Assignment-1
+        Create a form in HTML to display and receive the following fields:
+        1)  Roll Number
+        2)  Name of the Candidate
+        3)  Gender (Male, Female & Other)
+        4)  Date of Birth
+        5)  Name of the home town
+        6)  Aadhaar Card Number
+        7)  Highest Qualification
+        8)  Owns Two-wheeler / Three-wheeler / Four-wheeler
+        9)  Hobby
+       10)  Innoculation
+-->
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1 align="center">Registration</h1>
+        <hr>
+        <br>
+        <form action="">
+            1. Candidate's Name:
+            <input type="text" name="name"><br>
+            2. Father's Name:
+            <input type="text"><br><br><br>
+            <input type="submit" value=" Save ">
+        </form>
+        <br><hr><br>
+        <form action="welcome.html" method="post">
+            <table>
+                <tr>
+                    <td>1.</td>
+                    <td>Candidate's Name:</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Father's Name:</td>
+                    <td><input type="text" father="father"></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="M">Male
+                        <input type="radio" name="gender" value="F">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" name="dob"></td>
+                </tr>
+                <tr>
+                    <td valign="top">5.</td>
+                    <td valign="top">Highest Qualification:</td>
+                    <td>
+                        <input type="checkbox" name="hsc">10th<br>
+                        <input type="checkbox" name="inter">12th<br>
+                        <input type="checkbox" name="grad">Graduation<br>
+                        <input type="checkbox" name="mast">Masters<br>
+                        <input type="checkbox" name="doctor">Doctorate<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Location: </td>
+                    <td>
+                        <select name="location" id="">
+                            <option value="">Select</option>
+                            <option value="ANG">Angul</option>
+                            <option value="BLS">Balasore</option>
+                            <option value="CTC">Cuttack</option>
+                            <option value="BBS">Bhubaneswar</option>
+                        </select>
+                    </td>
+                    <tr>
+                    <td>7.</td>
+                        <td>Aadhaar Card Number:</td>
+                        <td><input type="text" name="aadhaar" maxlength="12" placeholder="Enter 12-digit Aadhaar number"></td>
+                      </tr>
+                      <tr>
+                    <td>8.</td>
+                    <td>Vehicle Ownership:</td>
+                    <td>
+                        <input type="checkbox" name="two_wheeler">Two-wheeler<br>
+                        <input type="checkbox" name="three_wheeler">Three-wheeler<br>
+                        <input type="checkbox" name="four_wheeler">Four-wheeler<br>
+                        </td>
+                        <tr>
+                    <td>9.</td>
+                    <td>Hobby:</td>
+                    <td>
+                        <input type="checkbox" name="reading">Reading<br>
+                        <input type="checkbox" name="writing">Writing<br>
+                        <input type="checkbox" name="sports">Sports<br>
+                        <input type="checkbox" name="music">Music<br>
+                        <input type="checkbox" name="dance">Dance<br>
+                        <input type="checkbox" name="other">Other (please specify)<br>
+                        </td>
+                </tr>
+            </table>
+            <input type="hidden" name="character" value="very good">
+            <br><br><br>
+            <input type="submit" value=" Save ">
+            <input type="reset"  value=" Clear ">
+        </form>
+    </body>
+</html>
