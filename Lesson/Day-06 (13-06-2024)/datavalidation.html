@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <script>
+            function okdata() {
+                var name = document.getElementById("name").value;
+                if(name.length==0) {
+                    alert("Name is Empty!");
+                    return false;
+                }
+                var each;
+                for(var i=0; i<name.length; i++) {
+                    each = name.charCodeAt(i);
+                    if(!(each==32 || (each>=65 && each<=90) || (each>=97 && each<=122))) {
+                        alert("Wrong data");
+                        return false;
+                    }
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <hr>
+        <form action="" onsubmit="return okdata();">
+            <table>
+                <tr>
+                    <td>1. Candidate's Name: </td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+            </table>
+            <br><br><br>
+            <input type="submit" value=" Save ">
+        </form>
+    </body>
+</html>

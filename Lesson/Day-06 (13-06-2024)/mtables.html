@@ -3,12 +3,14 @@
         <title>Multiplication Tables</title>
         <script>
             function tables() {
-                var from = document.getElementById("from").value;
-                var to = document.getElementById("till").value;
+                var fromObj = document.getElementById("from");
+                var fromVal = fromObj.value;
+
+                var toVal = document.getElementById("till").value;
                 var count = 0;
                 document.writeln("<table border='1'>");
                 document.writeln("<tr>");
-                for(var i=from; i<=to; i++) {
+                for(var i=fromVal; i<=toVal; i++) {
                     document.writeln("<td>");
                     document.writeln("<table>");
                     for(var j=1; j<=10; j++) {
