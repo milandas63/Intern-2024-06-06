@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime numbers</title>
+    <script>
+        function primes()
+        {
+            var from = parseInt(document.getElementById("from").value);
+            var to = parseInt(document.getElementById("till").value);
+            var primeNumbers = [];
+
+            // it is for check validation
+            if (isNaN(from) || isNaN(to) || from < 2 || to < from) {
+                alert('Please enter valid numbers. From must be >= 2 and To must be >= From.');
+                return;
+            }
+
+
+
+
+            function isPrime(n) {
+  
+    if (n <= 1) {
+        return false;
+    }
+    if (n === 2) {
+        return true;
+    }
+    if (n % 2 === 0) {
+        return false;
+    }
+
+    var sqrtN = Math.sqrt(n);
+    for (var i = 3; i <= sqrtN; i += 2) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+for(i=from;i<=to;i++){
+    if (isPrime(i)) {
+                    primeNumbers.push(i);
+                }
+
+}
+var primeListElement = document.getElementById('primeList');
+            primeListElement.innerHTML = '<h2>Prime Numbers between ' + from + ' and ' + to + '</h2>';
+            primeListElement.innerHTML += primeNumbers.join(', ');
+
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>Prime Numbers</h1>
+    <hr />
+    <table>
+      <tr>
+        <td>from which number :</td>
+        <td><input type="text" id="from" name="from" /></td>
+      </tr>
+      <tr>
+        <td>Till which Number:</td>
+        <td><input type="text" id="till" name="till" /></td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <input type="button" onclick="primes();" value=" Run " />
+    <div id="primeList"></div>
+  </body>
+</html>
