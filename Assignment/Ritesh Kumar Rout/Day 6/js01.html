@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Hello World in Javascript</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 0; i < 10; i++)
+            document.write("<h1>Hello World!</h1>");
+        document.writeln("<br><br><br><br><br>");
+        var spaces = 40;
+        var stars = 1;
+        document.writeln("<tt>");
+        for (var line = 1; line <= 19; line++) {
+            for (var i = 0; i < spaces; i++) document.write("&nbsp;");
+            for (var i = 0; i < stars; i++) document.write("*");
+            document.write("<br>");
+            if (line < 9) {
+                spaces--;
+                stars += 2;
+            } else {
+                spaces++;
+                stars -= 2;
+            }
+        }
+        document.writeln("</tt>");
+        document.writeln("<br><br><br><br><br>");
+    </script>
+</body>
+
+</html>
