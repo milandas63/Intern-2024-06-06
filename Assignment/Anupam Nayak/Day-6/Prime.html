@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prime Numbers</title>
+</head>
+<body>
+  <h1>Prime Numbers</h1>
+  <form>
+    <label for="from">From:</label>
+    <input type="number" id="from" name="from"><br><br>
+    <label for="to">To:</label>
+    <input type="number" id="to" name="to"><br><br>
+    <button type="button" onclick="printPrimes()">Prime Numbers are</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    function printPrimes() {
+      var from = document.getElementById("from").value;
+      var to = document.getElementById("to").value;
+      var result = document.getElementById("result");
+      result.innerHTML = "";
+
+      for (var i = from; i <= to; i++) {
+        if (isPrime(i)) {
+          result.innerHTML += i + ",";
+        }
+      }
+    }
+
+    function isPrime(n) {
+      if (n <= 1) return false;
+      for (var i = 2; i * i <= n; i++) {
+        if (n % i === 0) return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
