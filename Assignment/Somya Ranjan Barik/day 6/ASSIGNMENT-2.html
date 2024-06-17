@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Finder</title>
+    <script>
+        function isPrime(num) {
+            if (num <= 1) {
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        function findPrimesBetween(start, end) {
+            let primes = [];
+            for (let num = start; num <= end; num++) {
+                if (isPrime(num)) {
+                    primes.push(num);
+                }
+            }
+            return primes;
+        }
+        function displayPrimes() {
+            const fromNumber = parseInt(document.getElementById('fromNumber').value);
+            const toNumber = parseInt(document.getElementById('toNumber').value);
+            
+            if (isNaN(fromNumber) || isNaN(toNumber)) {
+                alert("Please enter valid integers.");
+                return;
+            }
+
+            if (fromNumber > toNumber) {
+                alert("Starting number should be less than or equal to ending number.");
+                return;
+            }
+
+            const primes = findPrimesBetween(fromNumber, toNumber);
+            document.getElementById('result').innerText = `Prime numbers between ${fromNumber} and ${toNumber} are: ${primes.join(', ')}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Prime Number Finder</h1>
+    <label for="fromNumber">Enter the starting number:</label>
+    <input type="number" id="fromNumber" name="fromNumber"><br><br>
+    <label for="toNumber">Enter the ending number:</label>
+    <input type="number" id="toNumber" name="toNumber"><br><br>
+    <button onclick="displayPrimes()">Find Prime Numbers</button>
+    <p id="result"></p>
+</body>
+</html>
