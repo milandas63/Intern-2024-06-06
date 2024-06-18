@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>assingement-3</title>
+    </head>
+    <body>
+        <h1>general statistics</h1>
+        <hr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="5" <h1 style="background-color:white;"></h1>&nbsp;</h1></th>
+                </tr>
+                <tr>
+                    <th <h1 style="background-color:lightgray;"></h1><button>CE</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>AC</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>M</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>M+</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>ON</button></th>
+                </tr>
+                <tr>
+                    <th <h1 style="background-color:white;"></h1><button>SQR</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>LOG</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>AVG</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>%</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>*</button></th>
+                </tr>
+                <tr>
+                    <th <h1 style="background-color:lightgray;"></h1><button>7</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>8</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>9</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>++</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>-</button></th>
+                </tr>
+                <tr>
+                    <th <h1 style="background-color:white;"></h1><button>4</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>5</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>6</button></th>
+                    <th <h1 style="background-color:white;"></h1><button>--</button></th>
+                    <th rowspan="2"<h1 style="background-color:white;"></h1></h1></h1><button>+</button></th>
+                </tr>
+                <tr>
+                    <th <h1 style="background-color:lightgray;"></h1><button>1</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>2</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>3</button></th>
+                    <th <h1 style="background-color:lightgray;"></h1><button>**</button></th>           
+                </tr> 
+                <tr>
+                    <th <h1 style="background-color:white;"></h1><button>.</button></th>
+                    <th colspan="2"<h1 style="background-color:white;"></h1><button>0</button></th>
+                    <th colspan="2"<h1 style="background-color:white;"></h1><button>=</button></th>
+                </tr>     
+            </thead>
+            
+        </table>
+    </body>
+</html>
+
+
+
