@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Form Data Check</title>
+        <script>
+            function validate() {
+                var name = document.getElementById("name").value;
+                alert(name);
+                var valid = true;
+                for(var i=0; i<name.length; i++) {
+                    e = name.charCodeAt(i);
+                    if( !(e>=65 && c<=90) ) {
+                        valid = false;
+                        break;
+                    } else if( !(e>=97 && c<=122) ) {
+                        valid = false;
+                        break;
+                    } else if(e!=32) {
+                        valid = false;
+                        break;
+                    }
+                }
+                if(!valid) {
+                    alert("Invalid data");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <!-- form action="dataToJsp.jsp" onSubmit="return validate();" -->
+        <form action="#" onSubmit="return validate();">
+            <table>
+                <tr>
+                    <td>Enter your name: </td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+            </table>
+            <br><br>
+            <input type="submit" value=" Save ">
+            <br><br>
+        </form>
+    </body>
+</html>
