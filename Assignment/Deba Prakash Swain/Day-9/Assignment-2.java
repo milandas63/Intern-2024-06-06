@@ -1,4 +1,4 @@
-public class Question_5Partten{
+public class Question5_Partten{
     public static void main(String[] args){
         int height = 10;
 
