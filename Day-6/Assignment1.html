@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <style>
+            .error { color: red; }
+        </style>
+        <script>
+            function okdata() {
+                // Validate name
+                var name = document.getElementById("name").value;
+                if(name.length == 0) {
+                    alert("Name is Empty!");
+                    return false;
+                }
+                var each;
+                for(var i = 0; i < name.length; i++) {
+                    each = name.charCodeAt(i);
+                    if(!(each == 32 || (each >= 65 && each <= 90) || (each >= 97 && each <= 122))) {
+                        alert("Wrong data in name");
+                        return false;
+                    }
+                }
+
+                // Validate email
+                var email = document.getElementById("email").value;
+                var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                if(email.length == 0) {
+                    alert("Email is Empty!");
+                    return false;
+                } else if(!email.match(emailPattern)) {
+                    alert("Invalid email format");
+                    return false;
+                }
+
+                // Validate for age
+                var age = document.getElementById("age").value;
+                if(age.length == 0) {
+                    alert("Age is Empty!");
+                    return false;
+                } else if(isNaN(age) || age <= 0) {
+                    alert("Age must be a positive number");
+                    return false;
+                }
+
+                // Validate for phone
+                var phone = document.getElementById("phone").value;
+                var phonePattern = /^[0-9]{10}$/;
+                if(phone.length == 0) {
+                    alert("Phone number is Empty!");
+                    return false;
+                } else if(!phone.match(phonePattern)) {
+                    alert("Invalid phone number format. Must be 10 digits.");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <hr>
+        <form action="" onsubmit="return okdata();">
+            <table>
+                <tr>
+                    <td>1. Candidate's Name: </td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td>2. Email: </td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>3. Age: </td>
+                    <td><input type="number" id="age" name="age"></td>
+                </tr>
+                <tr>
+                    <td>4. Phone Number: </td>
+                    <td><input type="tel" id="phone" name="phone"></td>
+                </tr>
+            </table>
+            <br><br><br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>
