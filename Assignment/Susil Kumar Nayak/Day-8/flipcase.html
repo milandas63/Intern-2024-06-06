@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Flip-Case</title>
+    <script>
+        function flipcase() {
+            var text = document.getElementById("text").value;
+            var result = "";
+            var each;
+            for (var i = 0; i < text.length; i++) {
+                each = text.charCodeAt(i);
+                if (each >= 65 && each <= 90) {
+                    each = each + 32;
+                } else if (each >= 97 && each <= 122) {
+                    each = each - 32;
+                }
+                result = result + String.fromCharCode(each);
+            }
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Flip-Case Program</h1>
+    <hr><br><br>
+    <big>Enter a text</big><br>
+    <input type="text" id="text">
+    <br><br>
+    <button onclick="flipcase();">Flip-Case</button>
+</body>
+
+</html>
