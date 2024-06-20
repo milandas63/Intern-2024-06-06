@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Country Information</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+  </head>
+  <body>
+    <h1 id="country_name"></h1>
+    <p id="capital"></p>
+    <p id="population"></p>
+    <p id="area"></p>
+    <div id="map"></div>
+    <script>
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      var countryName = getParameterByName('country');
+      document.getElementById('country_name').innerHTML = countryName;
+
+      // Add country information here
+      if (countryName === 'India') {
+        document.getElementById('capital').innerHTML = 'New Delhi';
+        document.getElementById('population').innerHTML = '1.38 billion';
+        document.getElementById('area').innerHTML = '3,287,590 km²';
+        initMap(20.5937, 78.9629); // India coordinates
+      } else if (countryName === 'Australia') {
+        document.getElementById('capital').innerHTML = 'Canberra';
+        document.getElementById('population').innerHTML = '25.7 million';
+        document.getElementById('area').innerHTML = '7,686,850 km²';
+        initMap(-25.2744, 133.7751); // Australia coordinates
+      } else if (countryName === 'Nepal') {
+        document.getElementById('capital').innerHTML = 'Kathmandu';
+        document.getElementById('population').innerHTML = '31.5 million';
+        document.getElementById('area').innerHTML = '147,181 km²';
+        initMap(27.7172, 85.3240); // Nepal coordinates
+      }
+      // Add more country information here
+
+      function initMap(lat, lng) {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: { lat: lat, lng: lng },
+          zoom: 4
+        });
+      }
+    </script>
+  </body>
+</html>
