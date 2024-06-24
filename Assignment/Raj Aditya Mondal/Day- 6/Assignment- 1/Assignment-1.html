@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>Form Validation</title>
+    <script>
+        function okdata() {
+            var name = document.getElementById("name").value;
+            if (name.length == 0) {
+                alert("Name is Empty");
+                return false;
+            }
+            var each;
+            for (var i = 0; i < name.length; i++) {
+                each = name.charCodeAt(i);
+                if (!(each == 32 || (each >= 65 && each <= 90) || (each >= 97 && each <= 122))) {
+                    alert("Wrong data");
+                    return false;
+                }
+            }
+            var regdNo = document.getElementById("regdNo").value;
+            if (regdNo.length == 0) {
+                alert("Registration Number is Empty");
+                return false;
+            }
+            if (isNaN(regdNo)) {
+                alert("Registration Number must be a number");
+                return false;
+            }
+
+            var rollNo = document.getElementById("rollNo").value;
+            if (rollNo.length == 0) {
+                alert("Roll Number is Empty");
+                return false;
+            }
+            if (isNaN(rollNo)) {
+                alert("Roll Number must be a number");
+                return false;
+            }
+
+            var fatherName = document.getElementById("fatherName").value;
+            if (fatherName.length == 0) {
+                alert("Father's Name is Empty");
+                return false;
+            }
+            for (var i = 0; i < fatherName.length; i++) {
+                each = fatherName.charCodeAt(i);
+                if (!(each == 32 || (each >= 65 && each <= 90) || (each >= 97 && each <= 122))) {
+                    alert("Wrong data in Father's Name field");
+                    return false;
+                }
+            }
+
+            var email = document.getElementById("email").value;
+            if (email.length == 0) {
+                alert("Email is Empty");
+                return false;
+            }
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                alert("Invalid Email");
+                return false;
+            }
+
+            var phone = document.getElementById("phone").value;
+            if (phone.length == 0) {
+                alert("Phone Number is Empty");
+                return false;
+            }
+            if (isNaN(phone)) {
+                alert("Phone Number must be a number");
+                return false;
+            }
+            if (phone.length != 10) {
+                alert("Phone Number must be 10 digits");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <hr>
+    <form action="" onsubmit="return okdata();">
+        <table>
+            <tr>
+                <td>1. Candidate's Name: </td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td>2. Registration Number: </td>
+                <td><input type="text" id="regdNo" name="regdNo"></td>
+            </tr>
+            <tr>
+                <td>3. Roll Number: </td>
+                <td><input type="text" id="rollNo" name="rollNo"></td>
+            </tr>
+            <tr>
+                <td>4. Father's Name: </td>
+                <td><input type="text" id="fatherName" name="fatherName"></td>
+            </tr>
+            <tr>
+                <td>5. Email: </td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>6. Phone Number: </td>
+                <td><input type="text" id="phone" name="phone"></td>
+            </tr>
+        </table>
+        <br><br><br>
+        <input type="submit" value="Save" onclick="return okdata();">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
