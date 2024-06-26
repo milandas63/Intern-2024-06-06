@@ -794,3 +794,46 @@ Rajesh Pradhan                      8260683863  rp538253@gmail.com              
         |  |  |  |  +- TooYoungAgeException
         |  |  |  |  +- TooOldAgeException
 
+    =   ASSIGNMENT
+        Create a login credential to receive the username and the password
+        from user. Check the following:
+        1.  The username must start with an uppercase alphabetic character
+        2.  The username must be at least 8 to 16 character
+        3.  The username must use at least 1 uppercase, 1 lowercase, 1 digit
+            and one special character like, @, &, $, #, %
+        4.  The password must be at least 8 characters using any character
+            on the keyboard
+
+        Object
+        +- Throwable
+        |  +- Exception
+        |  |  +- RuntimeException
+        |  |  |  +- LoginException
+        |  |  |  |  +- UsernameException
+        |  |  |  |  |  +- BlankUsernameException
+        |  |  |  |  |  +- NotUppercaseAlphabeticFirstCharacterException
+        |  |  |  |  |  +- TooShortUsernameException
+        |  |  |  |  |  +- TooLongUsernameException
+        |  |  |  |  |  +- InvalidCharacterInUsernameException
+        |  |  |  |  +- PasswordException
+        |  |  |  |  |  +- BlankPasswordException
+        |  |  |  |  |  +- TooShortPasswordException
+
+        How do you take the data from the user?
+            There is a class in name java.util.Scanner. Create an object
+            of the Scanner class and call the nextLine() method to receive
+            the data from the user.
+
+            +---------------------------------------------------+
+            |                                                   |
+            |   LOGIN                                           |
+            |   -----                                           |
+            |                                                   |
+            |   Username:                                       |
+            |   Password:                                       |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            |                                                   |
+            +---------------------------------------------------+
