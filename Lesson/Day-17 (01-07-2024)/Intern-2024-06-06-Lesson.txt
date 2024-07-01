@@ -904,3 +904,16 @@ Rajesh Pradhan                      8260683863  rp538253@gmail.com              
                 |  +- PipedWriter
                 |  +- PrintWriter
                 |  +- StringWriter
+
+    =   ASSIGNMENT
+        Read the following fields from the user using keyboard:
+        1.  Candidate's name
+        2.  Father's name
+        3.  Gender
+        4.  Email-id
+        5.  Mobile number
+        6.  Location
+
+        Write the above data in a CSV (Comma Separated Values) file in the name students.csv.
+        Example:
+            "Milan Das", "B K Das", "M", "milandas63@gmail.com", "7978168568", "Bhubaneswar"
