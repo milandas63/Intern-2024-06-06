@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Table</title>
+    <style>
+
+
+table {
+background-color: cyan;
+}	
+
+        table {
+		
+            width: 100%;
+            border-collapse: collapse;
+	
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+    <script>
+        function reverseTable() {
+            const table = document.getElementById('studentTable');
+            const rows = Array.from(table.rows);
+            const newTable = rows.map(row => Array.from(row.cells));
+
+
+            newTable.reverse();
+    
+            newTable.forEach(row => row.reverse());
+
+
+            const newRows = newTable.map(row => {
+                const newRow = document.createElement('tr');
+                row.forEach(cell => {
+                    const newCell = document.createElement(cell.tagName.toLowerCase());
+                    newCell.innerHTML = cell.innerHTML;
+                    newRow.appendChild(newCell);
+                });
+                return newRow;
+            });
+
+            while (table.rows.length > 0) {
+                table.deleteRow(0);
+            }
+
+  
+            newRows.forEach(newRow => table.appendChild(newRow));
+        }
+    </script>
+</head>
+<body>
+
+<h2>Student Table</h2>
+
+<table id="studentTable">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Father's Name</th>
+        <th>Mobile Number</th>
+        <th>Address</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rakesh Kumar Sahoo</td>
+        <td>Richard Sahoo</td>
+        <td>1234567890</td>
+        <td>123 Main St</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Rose Sahoo</td>
+        <td>Robert Sahoo</td>
+        <td>0987654321</td>
+        <td>456 Oak St</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Siba Son</td>
+        <td>Michael son</td>
+        <td>1112223333</td>
+        <td>789 Pine St</td>
+    </tr>
+</table>
+
+<br>
+<button onclick="reverseTable()">Reverse Table</button>
+
+</body>
+</html>
