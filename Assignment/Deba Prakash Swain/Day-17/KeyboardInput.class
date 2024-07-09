@@ -1,0 +1,68 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
+public class KeyboardInput {
+    BufferedReader reader;
+    Writer writer;
+
+    public KeyboardInput() {
+        try {
+            this.reader = new BufferedReader(new InputStreamReader(System.in));
+            this.writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("students.csv")));
+            this.writer.write("Candidate's name,Father's name,Gender,Email-id,Mobile number,Location");
+            this.writer.write("\n");
+
+            String var8;
+            for(boolean var1 = true; var1; var1 = var8.startsWith("Y")) {
+                for(int var2 = 0; var2 < 20; ++var2) {
+                    System.out.println();
+                }
+
+                System.out.println("STUDENT INFORMATION SYSTEM");
+                System.out.println("--------------------------");
+                System.out.println();
+                System.out.print("Candidate's name: ");
+                String var19 = this.reader.readLine();
+                System.out.print("Father's name:    ");
+                String var3 = this.reader.readLine();
+                System.out.print("Gender [M/F]:     ");
+                String var4 = this.reader.readLine();
+                System.out.print("Email-id:         ");
+                String var5 = this.reader.readLine();
+                System.out.print("Mobile number:    ");
+                String var6 = this.reader.readLine();
+                System.out.print("Location:         ");
+                String var7 = this.reader.readLine();
+                this.writer.write(String.format("\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", var19, var3, var4, var5, var6, var7));
+                System.out.println();
+                System.out.print("More [Y/N]: ");
+                var8 = this.reader.readLine();
+            }
+        } catch (IOException var17) {
+            var17.printStackTrace();
+        } finally {
+            try {
+                if (this.writer != null) {
+                    this.writer.close();
+                }
+
+                if (this.reader != null) {
+                    this.reader.close();
+                }
+            } catch (IOException var16) {
+                var16.printStackTrace();
+            }
+
+        }
+
+    }
+
+    public static void main(String[] var0) {
+        new KeyboardInput();
+    }
+}
