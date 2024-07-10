@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= day.charAt(0).toUpperCase() + day.slice(1) %></title>
+    <link rel="stylesheet" href="/styles/styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= day.charAt(0).toUpperCase() + day.slice(1) %></h1>
+        <h2>Choose an option:</h2>
+        <form id="optionsForm">
+            <button type="button" onclick="showTrainingOptions()">Which body part do you want to train and its training?</button>
+            <button type="button" onclick="showRestDay()">Rest day</button>
+        </form>
+
+        <div id="trainingOptions">
+            <h3>Enter the body part and its training:</h3>
+            <form action="/save-day" method="post">
+                <input type="hidden" name="day" value="<%= day %>">
+                <input type="text" name="exercise" placeholder="Enter exercise (e.g., Lats pulldown)">
+                <button type="submit">Add Exercise</button>
+            </form>
+            <ul id="exerciseList">
+                <% data.exercises.forEach(function(exercise) { %>
+                    <li><input type="checkbox" checked> <%= exercise %></li>
+                <% }) %>
+            </ul>
+        </div>
+
+        <div id="restDay">
+            <h3>It's a rest day!!</h3>
+            <form action="/save-day" method="post">
+                <input type="hidden" name="day" value="<%= day %>">
+                <input type="hidden" name="rest" value="true">
+                <button type="submit">Confirm Rest Day</button>
+            </form>
+        </div>
+
+        <% if (data.exercises.length > 0) { %>
+            <div class="added-exercise">
+                <% if (data.rest) { %>
+                    Rest day selected.
+                <% } else { %>
+                    Exercises added:
+                    <ul>
+                        <% data.exercises.forEach(function(exercise) { %>
+                            <li><%= exercise %></li>
+                        <% }) %>
+                    </ul>
+                <% } %>
+            </div>
+        <% } %>
+
+        <button id="goToMain" onclick="location.href='/'">Go to the main page</button>
+    </div>
+
+    <script>
+        function showTrainingOptions() {
+            document.getElementById('trainingOptions').style.display = 'block';
+            document.getElementById('restDay').style.display = 'none';
+        }
+
+        function showRestDay() {
+            document.getElementById('trainingOptions').style.display = 'none';
+            document.getElementById('restDay').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
