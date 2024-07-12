@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prime Numbers</title>
+</head>
+
+<body>
+    <h1>Find Prime Numbers in a Range</h1>
+    <label for="fromNumber">Enter the starting number:</label>
+    <input type="number" id="fromNumber"><br><br>
+    <label for="toNumber">Enter the ending number:</label>
+    <input type="number" id="toNumber"><br><br>
+    <button onclick="printPrimes()">Find Primes</button>
+
+    <h2>Prime Numbers:</h2>
+    <p id="result"></p>
+
+    <script>
+        function isPrime(n) {
+            if (n <= 1) {
+                return false;
+            }
+            if (n == 2) {
+                return true;
+            }
+            if (n % 2 == 0) {
+                return false;
+            }
+            for (let i = 3; i <= Math.sqrt(n); i += 2) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function printPrimes() {
+            const fromNumber = parseInt(document.getElementById('fromNumber').value);
+            const toNumber = parseInt(document.getElementById('toNumber').value);
+            let result = '';
+
+            for (let num = fromNumber; num <= toNumber; num++) {
+                if (isPrime(num)) {
+                    result += num + ' ';
+                }
+            }
+
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+
+</html>
