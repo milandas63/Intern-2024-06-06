@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reverse Table</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(107, 95, 160);
+        }
+        
+        table {
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: darkcyan;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: rgb(94, 49, 200);
+        }
+    </style>
+    <script>
+        function reverse() {
+            var tableObj = document.getElementById('table');
+            var rows = Array.from(tableObj.rows);
+            var header = rows.shift();
+
+            // Reverse rows order (excluding header)
+            rows.reverse();
+
+            // Reverse the order of cells in each row
+            rows.forEach(row => {
+                var cells = Array.from(row.cells);
+                cells.reverse();
+                cells.forEach(cell => row.appendChild(cell));
+            });
+
+            // Clear the table and re-append the rows in the new order
+            while (tableObj.firstChild) {
+                tableObj.removeChild(tableObj.firstChild);
+            }
+
+            tableObj.appendChild(header);
+            rows.forEach(row => tableObj.appendChild(row));
+
+            // Reverse the header row cells
+            var headerCells = Array.from(header.cells);
+            headerCells.reverse();
+            headerCells.forEach(cell => header.appendChild(cell));
+        }
+    </script>
+</head>
+
+<body bgcolor="red">
+    <table id="table" border="1" cellpadding="5">
+        <tr>
+            <th>SLNO</th>
+            <th>STUDENT'S NAME</th>
+            <th>GENDER</th>
+            <th>DOB</th>
+            <th>RANK</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td> Jyoti Jena</td>
+            <td>M</td>
+            <td>05-06-2003</td>
+            <td>12TH</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Anupam Nayak</td>
+            <td>M</td>
+            <td>13-11-2004</td>
+            <td>11TH</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Asutosh Dash</td>
+            <td>M</td>
+            <td>13-06-2002</td>
+            <td>11TH</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Manas Ranjan malla</td>
+            <td>M</td>
+            <td>13-06-2002</td>
+            <td>11TH</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Soumyajit Samal</td>
+            <td>M</td>
+            <td>04-04-2005</td>
+            <td>11TH</td>
+        </tr>
+    </table>
+    <button onclick="reverse();">Reverse</button>
+    <div id="reversedTableContainer"></div>
+</body>
+
+</html>
