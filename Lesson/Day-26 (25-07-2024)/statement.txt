@@ -1,0 +1,45 @@
+STEP-01
+import java.sql package
+	import java.sql.*;
+
+
+STEP-02
+Load and register driver
+	Class.forName("com.mysql.jdbc.Driver");
+	Class.forName("org.gjt.mm.mysql.Driver");
+
+STEP-03
+Create CONNECTION object
+Connection is an interface and can't be instanciated.
+To implement Connection interface, more 50 methods must be overrided.
+The best possible way is to call the getConnection method from the DriverManager
+class. The getConnection method is static, so it may be called by class name
+reference.
+
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database","root","root");
+
+STEP-04
+Create Statement Object:
+There are three types of statements:
+1. Statement
+	These statements are compiled during the runtime and they are slow.
+	Example:
+		Statement stmt = conn.createStatement();
+		ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+2. PreparedStatement
+	These statments are compiled during compile time for which they are
+	fast.
+		PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM student");
+								  conn.prepareStatement("INSERT INTO student VALUES(?,?,?)");
+		//	Using placeholders
+		pstmt.setString(1, "");
+		pstmt.setString(2, "");
+		pstmt.setString(3, "");
+		pstmt.executeQuery();	pstmt.executeUpdate();
+3. CallableStatement
+	For executing DDL commands.
+
+There are 3 types of Statements:
+1.	Statement
+2.  PreparedStatement
+3.  CallableStatement
