@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Maintenance</title>
+    <link rel="stylesheet" href="partymaintenance.css">
+</head>
+<body>
+    <div class="container">
+       <h1>Party Maintenance</h1>
+        <div class="content">
+            <form id="partyForm">
+                <div class="form-group">
+                    <label for="date" >1. Date:</label><br>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="id">2. ID:</label>
+                    <input type="text" id="id">
+                </div>
+                <div class="form-group">
+                    <label for="name">3. NAME:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <div id="sale-areas">4. SALE-AREA:</div>
+                    <input type="text" id="sale-area">
+                </div>
+            </form>
+        </div>
+        <div class="buttons">
+            <button id="saveBtn">SAVE</button>
+            <button id="clearBtn">CLEAR</button>
+            <button id="exitBtn">EXIT</button>
+        </div>
+    </div>
+    <script src="partymaintenance.js"></script>
+</body>
+</html>

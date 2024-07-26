@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Transaction Entry</title>
+    <link rel="stylesheet" href="stockentry.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+        <h1 id="heading">Stock Transaction Entry</h1>
+    </table>
+    <table id="main-frame" border="1">
+        <div class="form-section">
+            <div class="form-row">
+                <label> Date And Time <input type="datetime-local" id="date" placeholder="##-##-####"></label>
+                <label><div id="party-maintenance">Party Name </div><input type="text" id="party-name" placeholder="!!!!!!!!!!!!!!!!!!!!!!!!"></label>
+            </div>
+            <div class="form-row">
+                <label>Stk-No. <input type="text" id="stk-no" placeholder="######"></label>
+                <label>DL.No. <input type="text" id="dl-no" placeholder="xxx-auto-fill-xxxxxxxxx"></label>
+            </div>
+            <div class="form-row">
+                <label><div id="Transaction-type">Transaction-Type </div> <input type="text" id="trn-type" placeholder="!!!!!!!!!!!!!!!!!!!!!!!!"></label>
+                <label>Address <input type="text" id="address" placeholder="xxx-auto-fill-xxxxxxxxx"></label>
+            </div>
+            <div class="form-row">
+                <label>Transaction-No. <input type="text" id="trn-no" placeholder="######"></label>
+            </div>
+        </div>
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th><div id="mfr">MFR</div></th>
+                    <th><div id="place">PRODUCT-NAME</div></th>
+                    <th>BATCH-NO</th>
+                    <th>MRP</th>
+                    <th>EXP-DT</th>
+                    <th>RATE</th>
+                    <th>QTY</th>
+                    <th>FREE</th>
+                    <th>TAX</th>
+                    <th>NET-AMT</th>
+                    <th colspan="2">COSTOMIZE</th>
+                </tr>
+            </thead>
+                <tbody id="cell">
+                 
+                </tbody>         
+    </table>
+        <div class="buttons">
+            <button onclick="addRow()">Add</button>
+            <button onclick="save()">Save</button>
+            <button id="resetButton">Reset</button>
+            <button onclick="search()">Search</button>
+        </div>
+    </div>
+
+    <script src="stockentry.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:gray;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:aliceblue;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 110px);
+    padding: 5px;
+}
+
+button {
+    --b: 3px;   
+    --s: .45em; 
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  button:hover,
+  button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  button:active {
+    background: var(--color);
+    color: #fff;
+  }
+
+#sale-areas{
+    text-shadow: 2pc;
+    color:black;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
