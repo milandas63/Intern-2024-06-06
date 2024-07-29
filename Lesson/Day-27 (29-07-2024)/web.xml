@@ -9,10 +9,18 @@
   	<servlet-name>hello</servlet-name>
   	<servlet-class>com.hello.Hello</servlet-class>
   </servlet>
-  
   <servlet-mapping>
   	<servlet-name>hello</servlet-name>
   	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>pyramid</servlet-name>
+  	<servlet-class>com.pattern.Pyramid</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>pyramid</servlet-name>
+  	<url-pattern>/pyramid1</url-pattern>
   </servlet-mapping>
 
 </web-app>
