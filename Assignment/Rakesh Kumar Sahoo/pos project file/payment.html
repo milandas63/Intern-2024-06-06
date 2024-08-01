@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Slip</title>
+   <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+        }
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: ;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form-labels {
+            width: 15%;
+            border: none;
+        }
+        .form-fields {
+            width: 50%;
+            border: none;
+        }
+        .outer-table {
+            border: 1px solid black;
+        }
+        .last-table {
+            border: 1px solid black;
+            max-height: 200px; 
+            overflow-y: auto;
+            position: relative;
+        }
+        h1 {
+            text-align: center;
+            position: sticky;
+            top: 0;
+            background-color: lightgrey;
+            z-index: 1;
+            margin: 0;
+            padding: 20px 0;
+            font-size: 24px;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+        .icon-container {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .icon-container i {
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 20px;
+            color: #555;
+            transition: color 0.3s ease;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .icon-container i:hover {
+            color: #333;
+            background-color: #f2f2f2;
+        }
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #555;
+        }
+       
+       #stkNo{
+       width:20%
+       }
+        
+    </style>
+      
+</head>
+<body>
+
+    <table class="outer-table">
+        <tbody>
+            <tr class="outer-table">
+                <td colspan="4">
+                    <h1>  RECEIPT-PAYMENT TRANSACTION </h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+<form>
+                    <table>
+                        <tbody>
+                        <tr>
+                        <td>Transaction Type:</td>
+			                <td>
+			                    <input type="radio" name="transactionType" value="R"> R 
+			                    <input type="radio" name="transactionType" value="P"> P 
+			                </td>
+                        
+                        </tr>
+                            <tr>
+                                <td class="form-labels">
+                                    <label for="date">Date:</label>
+                                </td>
+                                <td class="form-fields">
+                                    <input type="date" id="date" name="date" placeholder="##-##-####">
+                                </td>
+
+                                <td class="form-labels">
+                                    <label for="partyName">Party Name:</label>
+                                </td>
+                                <td class="form-fields">
+                                <select id="party_id" name="party_id" onChange="viewParty();">
+                                <option value="">Select</option>
+                            </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="form-labels">
+                                    <label for="stkNo">Transaction Number:</label>
+                                </td>
+                                 <td class="form-fields">
+                                    <input type="text" id="stkNo" name="stkNo"  placeholder="Enter stock number">
+                                 </td>                    
+                                 
+                </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+                <tr>
+	                     <td class="form-labels">
+	                     <label for="Inv No">Inv No:</label>
+	                     </td>
+	                     <td class="form-fields">
+	                     <input type="number" id="Inv No" name="Inv No" placeholder="Enter Inv number">              
+	                     </td>          
+                         </tr>
+						<td class="form-labels">
+	                     <label for="stkNo">Inv-Date:</label>
+	                     </td>
+	                     <td class="form-fields">
+	                     <input type="date" id="Inv-Date" name="Inv-Date" placeholder="Enter Date">               
+	                     </td>
+	                     <tr>
+	                     <td class="form-labels">
+	                     <label for="Inv-Amt">Inv-Amt:</label>
+	                     </td>
+	                     <td class="form-fields">
+	                     <input type="number" id="inv-amt" name="Inv-Amt" placeholder="Enter Inv-Amt">
+                         </td> 
+	                     </tr>
+	                     <tr>
+	                     <td class="form-labels">
+	                     <label for="Inv-REF">Inv-REF:</label>
+	                     </td>
+	                     <td class="form-fields">
+	                     <input type="number" id="inv_ref" name="inv_ref" placeholder="Enter Inv-REF">
+                         </td> 
+	                     </tr>
+	                     <tr>
+	                     <td class="form-labels">
+	                     <label for="Cheque No">Cheque No:</label>
+	                     </td>
+	                     <td class="form-fields">
+	                     <input type="number" id="Cheque NO" name="Cheque NO" placeholder="Enter Cheque NO">            
+	                     </td> 
+	                     </tr>
+	                     <tr>
+	                     <td class="form-labels">
+	                     <label for="Bank Name">Bank Name:</label>
+	                     </td>
+	                     <td class="form-fields">
+	                     <input type="text" id="Check NO" name="Bank Name" placeholder="Enter Bank Name">
+	                      </td> 
+	                     </tr>
+     </table>
+    
+    <div  style="text-align: center; margin-top: 20px;">
+        <input style="background-color: lightgray" type="submit" value="Submit">
+         
+    </div>
+</form>
+ 
+</body>
+</html>
