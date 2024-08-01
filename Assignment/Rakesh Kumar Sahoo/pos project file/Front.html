@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pharma.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+width: 90%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.logo {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+    margin-top: 2px; 
+    margin-bottom: 2px; 
+}
+</style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+           <img src="who.png" class="logo">
+           <ul>
+            <li><a href="partymaintenance.html">Manufacturer</a></li>
+            <li><a href="">Creditor(Vendor)</a></li>
+            <li><a href="">Debtors(Customer)</a></li>
+            <li><a href="transaction.html">Transaction Type</a></li>
+            <li><a href="stockentry.html">Stock Transaction</a></li>
+            <li><a href="payment.html">Payment</a></li>
+           </ul>
+        </div>
+        <div class="content">
+            <h1>Stock Management and Party Accounting In MEDICARE</h1>
+
+            <div>
+                <button type="button"><span></span>REGISTRATION</button>
+        </form>     
+           <button type="button" onclick="document.getElementById('loginForm').submit();"><span></span>LOGIN</button> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+   
+ 
