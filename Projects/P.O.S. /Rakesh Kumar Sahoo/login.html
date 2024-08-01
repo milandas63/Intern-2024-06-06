@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+ <style>
+
+
+ body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pharma.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    }
+    .container {
+        max-width: 500px;
+        margin: 200px auto;
+        padding: 50px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        background-color: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pharma.jpg);;
+        font-size: 25px;
+        max-height: 400px;
+
+    }
+    input[type="text"], input[type="password"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    input[type="submit"] {
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 50rem;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label id="username"><input type="text" placeholder="User-Id" id="username"></label>
+      <label id="pass"><input type="password" placeholder="Password" id="pass"></label>
+      <button type="submit">Login</button>
+    </form>
+    <p id="error"></p>
+  </div>
+
+  <script>
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+
+  var storedUsername = localStorage.getItem("username");
+  var storedPassword = localStorage.getItem("password");
+
+
+  if (username === storedUsername && password === storedPassword) {
+
+    window.location.href = "index.html";
+  } else {
+  
+    document.getElementById("error").innerText = "Invalid username or password";
+  }
+});
+
+</script>
+</body>
+</html>
