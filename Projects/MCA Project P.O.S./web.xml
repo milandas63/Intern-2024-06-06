@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Point_Of_Sale</display-name>
+  <welcome-file-list>
+    <welcome-file>FirstPage.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Test</servlet-name>
+  	<servlet-class>com.project.UserDetails</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Test</servlet-name>
+  	<url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Two</servlet-name>
+  	<servlet-class>com.project.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Two</servlet-name>
+  	<url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+</web-app>
